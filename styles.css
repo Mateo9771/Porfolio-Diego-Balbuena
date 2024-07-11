@@ -1,0 +1,224 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #333;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+header {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+   
+}
+.title{
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+}
+header a{
+    text-decoration: none;
+    color: #333;
+}
+header a:hover{
+    color: #333;
+    text-decoration-line: none;
+}
+
+nav ul {
+    font-family: "Great Vibes", cursive;
+    font-size: x-large;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: rgb(65, 51, 145);
+    text-decoration-line: none;
+}
+.portada{
+    background-image: #994141;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.port-img{
+    background:linear-gradient(to right, rgb(8, 8, 8) , rgba(0, 0, 0, 0.527), rgba(51, 49, 49, 0.308)), url(img/DEGUSTA\ DIEGO\ BAL\ 03.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 95%;
+    height: 600px;
+    margin:10px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color: white;
+}
+.port-titulo{
+    font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+    
+}
+
+section {
+    padding: 20px;
+}
+
+.diego-img{
+    display: flex;
+    justify-content: center;
+}
+
+.diego-img img{
+    width: 20rem;
+    border-radius: 50%;
+}
+
+body hr{
+    width: 70%;
+    background-color: #b31b80;
+    height: 0,5px;
+}
+
+.biografia-img{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.biografia-img img{
+    width: 20rem;
+    height: 30rem;
+    border-radius: opx;
+    border-style: groove;
+    box-shadow: 0px 10px 14px #502943;
+}
+
+.multi{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    .projec-cont{
+        padding: 0%;
+        display: flex;
+        float: left;
+    }
+    .multimedia{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        .youtube{
+            width:340px;
+        }
+    }
+}
+
+footer {
+    background-color: #FFF;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.content-footer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+.redes{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.icon{
+    width: 4vh;
+}
+
+.contacto{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+.contac-form{
+    width: 40rem;
+    
+    .li-form{
+        display: flex;
+        flex-direction: column;
+    }
+    input{
+        margin-top: 1rem;
+    }
+}
+}
+@media screen and (max-width: 1024px){
+    .port-img{
+        width: 100%;
+        margin: 0px;
+        height: 40vh;
+        background-size: cover;
+    }
+    .redes{
+    width: 100%;
+    }
+.icon{
+    width: 3vh;
+}
+.diego-img img{
+    width: 60%;
+    border-radius: 50%;
+}
+.multimedia{
+    flex-direction: column;
+    .youtube{
+        width: 300px;
+    }
+}
+.biografia-img img{
+    width: 300px;
+    height: 400px;
+}
+.contac-form{
+    width: 12rem;
+    textarea{
+        margin-top: 1rem;
+    }
+}
+}
